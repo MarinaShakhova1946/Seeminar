@@ -1,13 +1,20 @@
 package Masha;
 
-import java.util.List;
 
 public class Food {
-    String Name;
-    double m;
+    private final String Name;
+    private final double Count;
 
-    public Food(String Name, double m) {
+    public Food(String Name, double Count) {
         this.Name=Name;
-        this.m=m;
+        this.Count=Count;
+    }
+
+    public String getName() {
+        return Name;
+    }
+
+    public double getCount() {
+        return Count;
     }
 }
